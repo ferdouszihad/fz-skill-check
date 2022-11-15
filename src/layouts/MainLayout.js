@@ -12,7 +12,9 @@ const MainLayout = () => {
         <Outlet></Outlet>
       </main>
       <footer>
-        <p className="bg-dark m-0 fixed-bottom text-light">This is footer</p>
+        <p className="bg-dark m-0 text-center py-1 fixed-bottom text-light">
+          Ferdous Zihad || All Right Reserved
+        </p>
       </footer>
     </div>
   );
