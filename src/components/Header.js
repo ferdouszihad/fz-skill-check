@@ -22,8 +22,11 @@ const Header = () => {
               <Link to="home" className="ms-4 text-decoration-none text-light">
                 Home
               </Link>
-              <Link to="quiz" className="ms-4 text-decoration-none text-light">
-                Quiz
+              <Link
+                to="topics"
+                className="ms-4 text-decoration-none text-light"
+              >
+                Topics
               </Link>
               <Link to="blog" className="ms-4 text-decoration-none text-light">
                 Blog

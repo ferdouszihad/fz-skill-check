@@ -2,8 +2,10 @@ import React from "react";
 import { Button } from "react-bootstrap";
 
 import { FiPlay } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
+  const navigate = useNavigate();
   return (
     <section>
       <div className="container mx-auto row  align-items-center">
@@ -13,6 +15,7 @@ const Banner = () => {
             <span className="text-primary">Skill-Check</span>
           </h1>
           <Button
+            onClick={() => navigate("/topics")}
             variant="light"
             className="btn btn-lg btn-outline-primary d-flex align-items-center gap-2"
           >

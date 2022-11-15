@@ -19,7 +19,7 @@ const Question = ({ data }) => {
     if (checkCorrect(answer, correctAnswer)) {
       toast.success(`Your Answer < ${answer} >  is correct`);
     } else {
-      toast.error(`Your Answer < ${answer} >  is correct`);
+      toast.error(`Your Answer < ${answer} >  is Wrong.`);
     }
   };
 
@@ -53,7 +53,7 @@ const Question = ({ data }) => {
             </div>
           </div>
 
-          <div className="card-text options mb-3 row row-cols-2 g-3">
+          <div className="card-text options mb-3 row row-cols-1 row-cols-md-2 g-3">
             {options.map((opt) => (
               <div className="col">
                 <p
