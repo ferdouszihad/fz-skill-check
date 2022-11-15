@@ -3,10 +3,16 @@ import { Button } from "react-bootstrap";
 import { FiEye } from "react-icons/fi";
 import toast, { Toaster } from "react-hot-toast";
 const Question = ({ data }) => {
-  const { question, correctAnswer, options, id } = data;
+  const { question, correctAnswer, options } = data;
 
   const checkCorrect = (ans, cAns) => {
-    if (ans === cAns) {
+    console.log(ans);
+    console.log(cAns);
+
+    if (
+      ans.toLowerCase().replaceAll(" ", "") ===
+      cAns.toLowerCase().replaceAll(" ", "")
+    ) {
       return true;
     } else {
       return false;
