@@ -35,7 +35,7 @@ const Question = ({ data }) => {
   return (
     <div className="col">
       <Toaster />
-      <div className="card mb-3 w-75 mx-auto">
+      <div className="card mb-3 bg-warning">
         <div className="card-body">
           <div className="d-flex justify-content-between align-items-center">
             <div className="question">
@@ -63,7 +63,7 @@ const Question = ({ data }) => {
               <div className="col">
                 <p
                   onClick={handleAnswer}
-                  className=" option-single h-100 d-flex align-items-center p-2 border border-2 cursor-pointer rounded"
+                  className="option-single h-100 d-flex bg-light align-items-center p-2 border border-2 cursor-pointer rounded"
                 >
                   {opt}
                 </p>

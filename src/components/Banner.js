@@ -9,7 +9,7 @@ const Banner = () => {
   return (
     <section>
       <div className="container mx-auto row  align-items-center">
-        <div className="col col-12 col-md-7">
+        <div className="col col-12 col-md-7 my-5">
           <h1 className="display-4 fw-bold mb-4">
             Explore Your Coding Skill with{" "}
             <span className="text-primary">Skill-Check</span>
@@ -26,6 +26,7 @@ const Banner = () => {
           <img
             src="https://c.tenor.com/flflC6GFzO8AAAAd/sultan-alrefaei-programmer.gif"
             alt=""
+            className="img-fluid"
           />
         </div>
       </div>

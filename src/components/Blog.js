@@ -3,7 +3,9 @@ import React from "react";
 const Blog = () => {
   return (
     <div className="container mt-5 mb-3">
-      <h2 class="py-3 m-2 rounded-2 bg-dark text-center">Our Blogs</h2>
+      <h2 class="py-3 m-2 rounded-2 bg-dark text-light text-center">
+        Our Blogs
+      </h2>
       <div className="blogs-container">
         <article class="my-4 mb-5 border border-dark p-3 rounded-bottom">
           <h2>Explain the Purpose of using react router</h2>

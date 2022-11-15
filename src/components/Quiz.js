@@ -6,8 +6,8 @@ const Quiz = () => {
   const { data } = useLoaderData();
   const { logo, name, questions } = data;
   return (
-    <div>
-      <div className="container my-5">
+    <div className="exam-container">
+      <div className="container py-5">
         <div className="exam-title d-flex gap-3 align-items-center text-center bg-dark text-light p-3 rounded-3">
           <div>
             <img

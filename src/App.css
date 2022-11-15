@@ -1,3 +1,13 @@
+.exam-container{
+    background: url('https://cdn.wallpapersafari.com/81/27/KY5lq7.gif');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar-toggler {
+
+    background-color: #f8f2f2cc !important;
+}
 .container{
     overflow-x: hidden;
 
@@ -13,8 +23,22 @@
     transition: .3s all;
 }
 .option-single:hover{
-    background-color: #ddd;
+    background-color: rgb(119, 241, 119) !important;
+    font-weight: 600;
 }
 .option-single:focus{
     background-color: rgb(249, 249, 166)!important;
+}
+
+.recharts-wrapper ,.recharts-surface{
+    width:100% !important;
+    height: 100% !important;
+}
+
+@media screen and (max-width:768px) {
+    .recharts-surface{
+        width:10px;
+        height:10px;
+    }
+    
 }
