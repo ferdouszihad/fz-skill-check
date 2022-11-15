@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { FiEye } from "react-icons/fi";
 import toast, { Toaster } from "react-hot-toast";
