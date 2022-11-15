@@ -33,3 +33,11 @@
     width: 100%;
     background: url('https://cdn.wallpapersafari.com/81/27/KY5lq7.gif');
 }
+
+.option-single{
+    cursor: pointer;
+    transition: .3s all;
+}
+.option-single:hover{
+    background-color: #ddd;
+}
