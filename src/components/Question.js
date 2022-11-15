@@ -1,16 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { FiEye } from "react-icons/fi";
+import toast, { Toaster } from "react-hot-toast";
 const Question = ({ data }) => {
-  console.log(data);
   const { question, correctAnswer, options, id } = data;
 
+  const checkCorrect = (ans, cAns) => {
+    if (ans === cAns) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  const handleAnswer = (event) => {
+    const answer = event.target.outerText;
+    console.log(question);
+    if (checkCorrect(answer, correctAnswer)) {
+      toast.success(`Your Answer < ${answer} >  is correct`);
+    } else {
+      toast.error(`Your Answer < ${answer} >  is correct`);
+    }
+  };
+
   const showRight = () => {
-    alert(correctAnswer);
+    toast(` 🎈 Correct Answer is : ${correctAnswer}`);
   };
 
   return (
     <div className="col">
+      <Toaster />
       <div className="card mb-3 w-75 mx-auto">
         <div className="card-body">
           <div className="d-flex justify-content-between align-items-center">
@@ -37,7 +56,10 @@ const Question = ({ data }) => {
           <div className="card-text options mb-3 row row-cols-2 g-3">
             {options.map((opt) => (
               <div className="col">
-                <p className=" option-single h-100 d-flex align-items-center p-2 border border-2 cursor-pointer rounded">
+                <p
+                  onClick={handleAnswer}
+                  className=" option-single h-100 d-flex align-items-center p-2 border border-2 cursor-pointer rounded"
+                >
                   {opt}
                 </p>
               </div>

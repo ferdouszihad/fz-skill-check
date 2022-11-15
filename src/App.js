@@ -4,6 +4,7 @@ import MainLayout from "./layouts/MainLayout";
 import Home from "./components/Home";
 import Blog from "./components/Blog";
 import Quiz from "./components/Quiz";
+import Error404 from "./components/Error404";
 
 function App() {
   const router = createBrowserRouter([
@@ -39,6 +40,10 @@ function App() {
         {
           path: "/blog",
           element: <Blog></Blog>,
+        },
+        {
+          path: "/*",
+          element: <Error404></Error404>,
         },
       ],
     },

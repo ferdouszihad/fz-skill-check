@@ -11,7 +11,7 @@ const Header = () => {
     <div>
       <Navbar bg="dark" expand="lg">
         <Container className="text-light">
-          <Navbar.Brand className="text-light">Fz-Spell-Checker</Navbar.Brand>
+          <Navbar.Brand className="text-light">Fz-SKill-Checker</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav

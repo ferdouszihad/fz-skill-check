@@ -7,13 +7,9 @@ const TopicSingle = ({ topic }) => {
   const { name, logo, total, id } = topic;
   return (
     <div className="col">
-      <div class="card  ">
-        <img
-          src={logo}
-          class=" m-3 bg-dark rounded-3"
-          alt={name}
-          className="img-fluid"
-        />
+      <div className="card">
+        <img src={logo} className="bg-dark m-3 rounded-3 img-fluid" alt="" />
+
         <div class="card-body d-flex justify-content-between">
           <h5 class="card-title">{name}</h5>
           <small className="text-danger fw-bold">{total} Question</small>
