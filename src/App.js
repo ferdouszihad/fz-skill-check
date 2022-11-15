@@ -13,15 +13,27 @@ function App() {
       children: [
         {
           path: "/home",
+          loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
           element: <Home></Home>,
         },
         {
           path: "",
+          loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
           element: <Home></Home>,
         },
 
         {
           path: "/quiz",
+          element: <Quiz></Quiz>,
+        },
+
+        {
+          path: "/quiz/:id",
+          loader: ({ params }) => {
+            return fetch(
+              `https://openapi.programming-hero.com/api/quiz/${params.id}`
+            );
+          },
           element: <Quiz></Quiz>,
         },
         {

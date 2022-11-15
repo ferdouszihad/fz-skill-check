@@ -1,6 +1,8 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import { BeakerIcon } from "@heroicons/react/24/solid";
+
+import { FiPlay } from "react-icons/fi";
+
 const Banner = () => {
   return (
     <section>
@@ -12,10 +14,9 @@ const Banner = () => {
           </h1>
           <Button
             variant="light"
-            className="btn btn-lg btn-outline-primary d-flex gap-3"
+            className="btn btn-lg btn-outline-primary d-flex align-items-center gap-2"
           >
-            <BeakerIcon className="h-6 w-6 text-blue-500" />
-            Start Test
+            <FiPlay></FiPlay> Start Test
           </Button>
         </div>
         <div className="col col-12 col-md-5">
